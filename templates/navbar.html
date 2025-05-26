@@ -3,4 +3,11 @@
 
 </a>
 
+<form>
+
+<form method="GET" action="{% url 'home' %}">
+    <input type="text"  name="q" placeholder="Search Rooms..." value="{{ request.GET.q }}"/>
+<button type="submit">Zoeken</button>
+</form>
+
 <hr>
